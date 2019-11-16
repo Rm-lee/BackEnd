@@ -41,6 +41,12 @@ exports.up = function(knex) {
           .string('experience_desc', 256)
           .notNullable();
         exp 
+          .string('experience_lat', 256)
+          .notNullable();
+          exp 
+          .string('experience_long', 256)
+          .notNullable();
+        exp 
           .date('date')
         exp
           .binary('image')
