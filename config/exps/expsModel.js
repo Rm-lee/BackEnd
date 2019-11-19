@@ -11,7 +11,7 @@ module.exports = {
 function getExps() {
     return db('organizers as o')
     .innerJoin('experiences as e', 'o.id', 'e.org_id')
-    .select('o.org_name', 'e.id', 'e.experience_title', 'e.experience_desc', 'e.date', 'e.image',, 'e.experience_lat','e.experience_long')
+    .select('o.org_name', 'e.id', 'e.experience_title', 'e.experience_desc', 'e.date', 'e.image', 'e.experience_lat','e.experience_long')
 }
 
 function editExp(changes, id) {
